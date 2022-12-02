@@ -7,6 +7,7 @@ output -> 120
 factorial = (input) => {
     let fact = 1;
 
+    // By defination
     if (input === 1 || input === 0){
         return 1;
     }
