@@ -1,18 +1,21 @@
 isPrime = (integer) => {
-	let flag = 0
+    let flag = 0
+
     // By defination
-	if (integer === 0 || integer === 1){
+    if (integer === 0 || integer === 1) {
         return false
     }
 
-	// for other integer
-	for (let index = 2; index <= integer / 2; index++){
-        if (integer % index === 0){
+    // for other integer
+    for (let index = 2; index <= integer / 2; index++) {
+        if (integer % index === 0) {
             flag++
         }
     }
 
-	if (flag === 0)  return true;
+    if (flag === 0) return true
+
+    return false
 }
 
 let result = 4
